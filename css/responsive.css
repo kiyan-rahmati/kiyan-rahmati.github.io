@@ -1,0 +1,1067 @@
+@media (max-width: 1050px) {
+
+    :root {
+        --container-width: 94%;
+    }
+
+
+    /* =========================
+       NAVBAR
+    ========================== */
+
+    .navbar-inner {
+        padding: 0 20px;
+    }
+
+
+    .nav-links {
+        gap: 22px;
+    }
+
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero-grid {
+        gap: 45px;
+    }
+
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+
+    .profile-card {
+        width: 340px;
+        height: 390px;
+    }
+
+
+    /* =========================
+       STATS
+    ========================== */
+
+    .stats-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* =========================
+       PROJECTS
+    ========================== */
+
+    .project-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* =========================
+       SKILLS
+    ========================== */
+
+    .skills-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================== */
+
+    .about-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* =========================
+       ARTICLES
+    ========================== */
+
+    .article-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* =========================
+       TESTIMONIALS
+    ========================== */
+
+    .testimonials-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* =========================
+       CONTACT
+    ========================== */
+
+    .contact-grid {
+        grid-template-columns:
+            1fr 1.3fr;
+        gap: 28px;
+    }
+
+
+    /* =========================
+       CTA
+    ========================== */
+
+    .cta-card {
+        padding: 50px 40px;
+    }
+
+}
+
+
+
+@media (max-width: 850px) {
+
+    /* =========================
+       NAVBAR
+    ========================== */
+
+    .navbar {
+        height: 70px;
+    }
+
+
+    .navbar-inner {
+        height: 70px;
+    }
+
+
+    .nav-links {
+
+        position: fixed;
+
+        top: 70px;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 4px;
+
+        padding: 16px;
+
+        background:
+            color-mix(
+                in srgb,
+                var(--surface) 96%,
+                transparent
+            );
+
+        border-bottom:
+            1px solid var(--border);
+
+        box-shadow:
+            var(--shadow-lg);
+
+        transform:
+            translateY(-130%);
+
+        opacity: 0;
+
+        pointer-events: none;
+
+        transition:
+            transform .3s ease,
+            opacity .3s ease;
+    }
+
+
+    .navbar.mobile-open .nav-links {
+
+        transform:
+            translateY(0);
+
+        opacity: 1;
+
+        pointer-events:
+            auto;
+    }
+
+
+    .nav-link {
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        width: 100%;
+
+        min-height: 48px;
+
+        border-radius:
+            var(--radius-md);
+    }
+
+
+    .nav-link.active {
+        background:
+            var(--surface-2);
+    }
+
+
+    .menu-toggle {
+        display: flex;
+    }
+
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+        padding-top: 70px;
+    }
+
+
+    .hero-grid {
+
+        grid-template-columns:
+            1fr;
+
+        text-align: center;
+
+        gap: 55px;
+    }
+
+
+    .hero-content {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .hero-description {
+        max-width: 680px;
+    }
+
+
+    .hero-actions {
+        justify-content:
+            center;
+    }
+
+
+    .hero-socials {
+        justify-content:
+            center;
+    }
+
+
+    .hero-visual {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* =========================
+       SECTION HEADING
+    ========================== */
+
+    .section-heading-row {
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+        gap: 20px;
+    }
+
+
+    .desktop-link {
+        display: none;
+    }
+
+
+    .mobile-section-link {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================== */
+
+    .about-grid {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    /* =========================
+       CONTACT
+    ========================== */
+
+    .contact-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 32px;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    .footer-inner {
+
+        flex-direction:
+            column;
+
+        text-align:
+            center;
+
+        gap: 22px;
+    }
+
+
+    .footer-links {
+        justify-content:
+            center;
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    /* =========================
+       GLOBAL
+    ========================== */
+
+    :root {
+        --text-4xl: 38px;
+        --text-3xl: 30px;
+        --text-2xl: 24px;
+    }
+
+
+    .container {
+        width: min(
+            calc(100% - 32px),
+            var(--container-width)
+        );
+    }
+
+
+    .section {
+        padding:
+            70px 0;
+    }
+
+
+    /* =========================
+       NAVBAR
+    ========================== */
+
+    .navbar-inner {
+        padding: 0;
+    }
+
+
+    .logo {
+        font-size: 20px;
+    }
+
+
+    .nav-actions {
+        gap: 6px;
+    }
+
+
+    .nav-action-button,
+    .icon-button {
+
+        width: 40px;
+        height: 40px;
+    }
+
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+        padding:
+            55px 0 65px;
+    }
+
+
+    .hero-badge {
+        font-size:
+            var(--text-xs);
+
+        padding:
+            7px 11px;
+    }
+
+
+    .hero-title {
+        font-size:
+            38px;
+
+        line-height:
+            1.15;
+    }
+
+
+    .hero-subtitle {
+        font-size:
+            17px;
+    }
+
+
+    .hero-description {
+        font-size:
+            15px;
+
+        line-height:
+            1.9;
+    }
+
+
+    .hero-actions {
+
+        width: 100%;
+
+        flex-direction:
+            column;
+    }
+
+
+    .hero-actions .btn {
+
+        width: 100%;
+
+        max-width: 340px;
+
+        justify-content:
+            center;
+    }
+
+
+    .hero-socials {
+
+        flex-wrap:
+            wrap;
+
+        font-size:
+            13px;
+    }
+
+
+    /* =========================
+       PROFILE
+    ========================== */
+
+    .profile-card {
+
+        width:
+            min(100%, 320px);
+
+        height:
+            360px;
+    }
+
+
+    .profile-image-wrapper {
+        width: 190px;
+        height: 190px;
+    }
+
+
+    /* =========================
+       STATS
+    ========================== */
+
+    .stats-section {
+        padding:
+            30px 0;
+    }
+
+
+    .stats-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 1px;
+
+        overflow:
+            hidden;
+
+        border-radius:
+            var(--radius-lg);
+    }
+
+
+    .stat-item {
+
+        padding:
+            22px 10px;
+    }
+
+
+    .stat-item strong {
+        font-size:
+            22px;
+    }
+
+
+    .stat-item span {
+        font-size:
+            11px;
+
+        line-height:
+            1.6;
+    }
+
+
+    /* =========================
+       SECTION HEADING
+    ========================== */
+
+    .section-heading {
+        margin-bottom:
+            35px;
+    }
+
+
+    .section-heading h2 {
+        font-size:
+            28px;
+    }
+
+
+    .section-heading p {
+        font-size:
+            14px;
+
+        line-height:
+            1.9;
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================== */
+
+    .about-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 14px;
+    }
+
+
+    .info-card {
+        padding:
+            24px;
+    }
+
+
+    /* =========================
+       SKILLS
+    ========================== */
+
+    .skills-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 12px;
+    }
+
+
+    .skill-category {
+        padding:
+            20px;
+    }
+
+
+    /* =========================
+       PROJECTS
+    ========================== */
+
+    .project-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 16px;
+    }
+
+
+    .project-card {
+        padding:
+            22px;
+    }
+
+
+    .project-title {
+        font-size:
+            20px;
+    }
+
+
+    .project-description {
+        font-size:
+            14px;
+    }
+
+
+    .project-footer {
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+        gap: 16px;
+    }
+
+
+    .project-links {
+        width: 100%;
+    }
+
+
+    .project-link {
+        flex: 1;
+    }
+
+
+    /* =========================
+       PROJECT CONTROLS
+    ========================== */
+
+    .project-controls {
+
+        flex-direction:
+            column;
+
+        align-items:
+            stretch;
+
+        gap: 12px;
+    }
+
+
+    .project-search {
+
+        width: 100%;
+    }
+
+
+    .project-sort {
+
+        width: 100%;
+    }
+
+
+    .project-sort select {
+        width: 100%;
+    }
+
+
+    /* =========================
+       ARTICLES
+    ========================== */
+
+    .article-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 16px;
+    }
+
+
+    .article-card {
+        padding:
+            22px;
+    }
+
+
+    /* =========================
+       TESTIMONIALS
+    ========================== */
+
+    .testimonials-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 16px;
+    }
+
+
+    .testimonial-card {
+        padding:
+            24px;
+    }
+
+
+    /* =========================
+       CTA
+    ========================== */
+
+    .cta-card {
+
+        padding:
+            38px 24px;
+
+        text-align:
+            center;
+    }
+
+
+    .cta-content {
+
+        display: flex;
+
+        flex-direction:
+            column;
+
+        align-items:
+            center;
+    }
+
+
+    .cta-card h2 {
+        font-size:
+            28px;
+    }
+
+
+    .cta-card p {
+        font-size:
+            14px;
+    }
+
+
+    .cta-decoration {
+        display: none;
+    }
+
+
+    /* =========================
+       PAGE HERO
+    ========================== */
+
+    .page-hero {
+
+        padding:
+            65px 0 50px;
+
+        text-align:
+            center;
+    }
+
+
+    .page-hero h1 {
+        font-size:
+            34px;
+    }
+
+
+    .page-hero p {
+        font-size:
+            14px;
+    }
+
+
+    /* =========================
+       CONTACT
+    ========================== */
+
+    .contact-card {
+
+        padding:
+            22px;
+    }
+
+
+    .contact-info {
+        gap:
+            12px;
+    }
+
+
+    .contact-item {
+
+        padding:
+            18px;
+    }
+
+
+    .form-row {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    /* =========================
+       SEARCH
+    ========================== */
+
+    .search-box {
+
+        width:
+            calc(100% - 24px);
+
+        max-height:
+            calc(100vh - 40px);
+
+        padding:
+            20px;
+    }
+
+
+    .search-input-wrapper {
+        padding:
+            0 12px;
+    }
+
+
+    .search-input-wrapper input {
+        font-size:
+            14px;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    .footer {
+        padding:
+            35px 0;
+    }
+
+
+    .footer-links {
+
+        flex-wrap:
+            wrap;
+
+        gap:
+            14px 20px;
+    }
+
+
+    .footer-copy {
+        font-size:
+            12px;
+    }
+
+}
+
+
+
+@media (max-width: 400px) {
+
+    .container {
+        width:
+            calc(100% - 24px);
+    }
+
+
+    .hero-title {
+        font-size:
+            33px;
+    }
+
+
+    .hero-subtitle {
+        font-size:
+            15px;
+    }
+
+
+    .profile-card {
+
+        width:
+            285px;
+
+        height:
+            335px;
+    }
+
+
+    .profile-image-wrapper {
+
+        width:
+            165px;
+
+        height:
+            165px;
+    }
+
+
+    .stats-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .stat-item {
+        padding:
+            18px;
+    }
+
+
+    .section-heading h2 {
+        font-size:
+            25px;
+    }
+
+
+    .cta-card h2 {
+        font-size:
+            24px;
+    }
+
+
+    .btn {
+        min-height:
+            46px;
+
+        padding:
+            11px 18px;
+
+        font-size:
+            13px;
+    }
+
+}
+
+
+
+@media (
+    max-width: 850px
+) and (
+    orientation: landscape
+) {
+
+    .hero-grid {
+        grid-template-columns:
+            1fr 1fr;
+
+        text-align:
+            left;
+    }
+
+
+    .hero-content {
+        align-items:
+            flex-start;
+    }
+
+
+    .hero-actions,
+    .hero-socials {
+        justify-content:
+            flex-start;
+    }
+
+
+    .profile-card {
+
+        width:
+            280px;
+
+        height:
+            330px;
+    }
+
+}
+
+
+
+/* =========================
+   RTL
+========================== */
+
+html[dir="rtl"] .hero-actions,
+html[dir="rtl"] .hero-socials {
+
+    direction:
+        rtl;
+}
+
+
+html[dir="rtl"] .project-footer {
+    direction:
+        rtl;
+}
+
+
+html[dir="rtl"] .footer-inner {
+    direction:
+        rtl;
+}
+
+
+html[dir="rtl"] .search-input-wrapper {
+    direction:
+        rtl;
+}
+
+
+html[dir="rtl"] .search-input-wrapper input {
+    text-align:
+        right;
+}
+
+
+html[dir="rtl"] .btn-arrow {
+    transform:
+        rotate(180deg);
+}
+
+
+
+/* =========================
+   REDUCED MOTION
+========================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .nav-links,
+    .navbar.mobile-open .nav-links {
+        transition:
+            none;
+    }
+
+}

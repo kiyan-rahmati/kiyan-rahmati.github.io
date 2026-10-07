@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kiyan-rahmati.github.io/sitemap.xml

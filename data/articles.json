@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title_en": "My Journey into Web Development",
+    "title_fa": "مسیر من در دنیای توسعه وب",
+    "excerpt_en": "A look at how I started learning web development and the technologies I have explored along the way.",
+    "excerpt_fa": "نگاهی به مسیر شروع یادگیری توسعه وب و تکنولوژی‌هایی که در این مسیر تجربه کرده‌ام.",
+    "date": "2026-10-01",
+    "url": "#"
+  },
+  {
+    "id": 2,
+    "title_en": "Building Better Web Projects",
+    "title_fa": "چطور پروژه‌های وب بهتری بسازیم؟",
+    "excerpt_en": "Some practical lessons about writing cleaner code, organizing projects and improving the user experience.",
+    "excerpt_fa": "چند نکته کاربردی درباره کدنویسی تمیز، ساختاردهی پروژه‌ها و بهتر کردن تجربه کاربری.",
+    "date": "2026-10-05",
+    "url": "#"
+  },
+  {
+    "id": 3,
+    "title_en": "What I Am Learning in Laravel",
+    "title_fa": "چیزهایی که در Laravel یاد می‌گیرم",
+    "excerpt_en": "My notes and experiences while learning Laravel, backend development, databases and modern web applications.",
+    "excerpt_fa": "یادداشت‌ها و تجربه‌های من هنگام یادگیری Laravel، توسعه بک‌اند، دیتابیس و ساخت اپلیکیشن‌های وب مدرن.",
+    "date": "2026-10-08",
+    "url": "#"
+  }
+]

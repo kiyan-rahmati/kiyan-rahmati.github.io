@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+>
+
+    <!-- Home -->
+
+    <url>
+        <loc>https://kiyan-rahmati.github.io/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+
+    <!-- Projects -->
+
+    <url>
+        <loc>https://kiyan-rahmati.github.io/pages/projects/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+
+    <!-- Articles -->
+
+    <url>
+        <loc>https://kiyan-rahmati.github.io/pages/articles/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+    <!-- About -->
+
+    <url>
+        <loc>https://kiyan-rahmati.github.io/pages/about/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+
+    <!-- Contact -->
+
+    <url>
+        <loc>https://kiyan-rahmati.github.io/pages/contact/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+</urlset>

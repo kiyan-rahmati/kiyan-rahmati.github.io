@@ -1,0 +1,62 @@
+[
+  {
+    "name": "HTML5",
+    "category": "Frontend",
+    "level": "Advanced"
+  },
+  {
+    "name": "CSS3",
+    "category": "Frontend",
+    "level": "Advanced"
+  },
+  {
+    "name": "JavaScript (ES6+)",
+    "category": "Frontend",
+    "level": "Intermediate"
+  },
+  {
+    "name": "Bootstrap",
+    "category": "Frontend",
+    "level": "Intermediate"
+  },
+  {
+    "name": "Vue.js",
+    "category": "Frontend",
+    "level": "Intermediate"
+  },
+  {
+    "name": "React",
+    "category": "Frontend",
+    "level": "Intermediate"
+  },
+  {
+    "name": "PHP",
+    "category": "Backend",
+    "level": "Intermediate"
+  },
+  {
+    "name": "Laravel",
+    "category": "Backend",
+    "level": "Intermediate"
+  },
+  {
+    "name": "AJAX",
+    "category": "Web",
+    "level": "Intermediate"
+  },
+  {
+    "name": "SQL",
+    "category": "Database",
+    "level": "Beginner"
+  },
+  {
+    "name": "MySQL",
+    "category": "Database",
+    "level": "Beginner"
+  },
+  {
+    "name": "Python",
+    "category": "Programming",
+    "level": "Intermediate"
+  }
+]

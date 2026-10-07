@@ -1,0 +1,326 @@
+/* ====================================
+   ANIMATIONS
+   Kiyan Rahmati Portfolio
+==================================== */
+
+
+/* ====================================
+   Fade In
+==================================== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* ====================================
+   Fade Up
+==================================== */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ====================================
+   Fade Down
+==================================== */
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ====================================
+   Fade Left
+==================================== */
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* ====================================
+   Fade Right
+==================================== */
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* ====================================
+   Scale In
+==================================== */
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* ====================================
+   Floating
+==================================== */
+
+@keyframes floating {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+}
+
+
+/* ====================================
+   Pulse
+==================================== */
+
+@keyframes pulse {
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.85;
+    }
+}
+
+
+/* ====================================
+   Glow
+==================================== */
+
+@keyframes purpleGlow {
+    0%,
+    100% {
+        box-shadow:
+            0 0 0 rgba(139, 92, 246, 0);
+    }
+
+    50% {
+        box-shadow:
+            0 0 30px rgba(139, 92, 246, 0.18);
+    }
+}
+
+
+/* ====================================
+   Shimmer
+==================================== */
+
+@keyframes shimmer {
+    0% {
+        background-position: -500px 0;
+    }
+
+    100% {
+        background-position: 500px 0;
+    }
+}
+
+
+/* ====================================
+   Animation Classes
+==================================== */
+
+.animate-fade-in {
+    animation:
+        fadeIn 0.7s ease both;
+}
+
+.animate-fade-up {
+    animation:
+        fadeUp 0.7s ease both;
+}
+
+.animate-fade-down {
+    animation:
+        fadeDown 0.7s ease both;
+}
+
+.animate-fade-left {
+    animation:
+        fadeLeft 0.7s ease both;
+}
+
+.animate-fade-right {
+    animation:
+        fadeRight 0.7s ease both;
+}
+
+.animate-scale {
+    animation:
+        scaleIn 0.6s ease both;
+}
+
+.animate-floating {
+    animation:
+        floating 3s ease-in-out infinite;
+}
+
+.animate-pulse {
+    animation:
+        pulse 2s ease-in-out infinite;
+}
+
+.animate-glow {
+    animation:
+        purpleGlow 2.5s ease-in-out infinite;
+}
+
+
+/* ====================================
+   Stagger Animation
+==================================== */
+
+.stagger > * {
+    opacity: 0;
+    animation:
+        fadeUp 0.6s ease forwards;
+}
+
+.stagger > *:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.stagger > *:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.stagger > *:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.stagger > *:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.stagger > *:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+.stagger > *:nth-child(6) {
+    animation-delay: 0.3s;
+}
+
+.stagger > *:nth-child(7) {
+    animation-delay: 0.35s;
+}
+
+.stagger > *:nth-child(8) {
+    animation-delay: 0.4s;
+}
+
+
+/* ====================================
+   Hover Effects
+==================================== */
+
+.hover-lift {
+    transition:
+        transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform:
+        translateY(-5px);
+}
+
+.hover-scale {
+    transition:
+        transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform:
+        scale(1.03);
+}
+
+
+/* ====================================
+   Cursor Blink
+==================================== */
+
+@keyframes cursorBlink {
+    0%,
+    45% {
+        opacity: 1;
+    }
+
+    46%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.cursor-blink {
+    animation:
+        cursorBlink 1s steps(1) infinite;
+}
+
+
+/* ====================================
+   Reduced Motion
+==================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

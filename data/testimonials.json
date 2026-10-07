@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Alex Morgan",
+    "role_en": "Project Client",
+    "role_fa": "مشتری پروژه",
+    "text_en": "Kiyan built the project with a clean structure and paid attention to the details and user experience.",
+    "text_fa": "کیان پروژه را با ساختاری مرتب پیاده‌سازی کرد و به جزئیات و تجربه کاربری توجه خوبی داشت.",
+    "avatar": ""
+  },
+  {
+    "id": 2,
+    "name": "Daniel Carter",
+    "role_en": "Developer",
+    "role_fa": "توسعه‌دهنده",
+    "text_en": "Working with Kiyan was a smooth experience. He is motivated, responsible and always interested in improving his work.",
+    "text_fa": "همکاری با کیان تجربه خوبی بود. فردی باانگیزه و مسئولیت‌پذیر است و همیشه به دنبال بهتر کردن کار خود است.",
+    "avatar": ""
+  },
+  {
+    "id": 3,
+    "name": "Sara Wilson",
+    "role_en": "Project Collaborator",
+    "role_fa": "همکار پروژه",
+    "text_en": "Kiyan approaches web development with curiosity and a strong willingness to learn and solve problems.",
+    "text_fa": "کیان با کنجکاوی و انگیزه بالا به توسعه وب نگاه می‌کند و برای یادگیری و حل مسئله تلاش می‌کند.",
+    "avatar": ""
+  }
+]

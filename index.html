@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Kiyan Rahmati — Web Developer, Frontend & Backend Developer."
+    >
+
+    <meta
+        name="author"
+        content="Kiyan Rahmati"
+    >
+
+    <meta
+        name="theme-color"
+        content="#07111f"
+    >
+
+    <title>Kiyan Rahmati — Web Developer</title>
+
+    <!-- Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="components/loader/loader.css">
+
+    <!-- Favicon -->
+<link
+    rel="icon"
+    href="favicon.svg"
+    type="image/svg+xml"
+>
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div id="loader-root"></div>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar" id="navbar">
+
+        <div class="container navbar-inner">
+
+            <a
+                href="./"
+                class="logo"
+                aria-label="Kiyan Rahmati Home"
+            >
+                <span>kiyan</span>.dev
+            </a>
+
+
+            <nav
+                class="nav-links"
+                id="navLinks"
+                aria-label="Main Navigation"
+            >
+
+                <a
+                    href="./"
+                    class="nav-link active"
+                    data-fa="خانه"
+                    data-en="Home"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="pages/projects/"
+                    class="nav-link"
+                    data-fa="پروژه‌ها"
+                    data-en="Projects"
+                >
+                    Projects
+                </a>
+
+                <a
+                    href="pages/articles/"
+                    class="nav-link"
+                    data-fa="مقالات"
+                    data-en="Articles"
+                >
+                    Articles
+                </a>
+
+                <a
+                    href="pages/about/"
+                    class="nav-link"
+                    data-fa="درباره من"
+                    data-en="About"
+                >
+                    About
+                </a>
+
+                <a
+                    href="pages/contact/"
+                    class="nav-link"
+                    data-fa="همکاری"
+                    data-en="Contact"
+                >
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <!-- Search -->
+                <button
+                    class="icon-button"
+                    type="button"
+                    data-search-open
+                    aria-label="Search"
+                    title="Search"
+                >
+                    <span>⌕</span>
+                </button>
+
+
+                <!-- Language -->
+                <button
+                    class="nav-action-button"
+                    type="button"
+                    data-language-toggle
+                    aria-label="Change language"
+                >
+                    <span data-language-label>FA</span>
+                </button>
+
+
+                <!-- Theme -->
+                <button
+                    class="icon-button"
+                    type="button"
+                    data-theme-toggle
+                    aria-label="Toggle theme"
+                    title="Toggle theme"
+                >
+                    <span data-theme-icon>☾</span>
+                </button>
+
+
+                <!-- Mobile -->
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    id="menuToggle"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero section">
+
+            <div class="container hero-grid">
+
+                <div class="hero-content animate-fade-up">
+
+                    <div class="hero-badge">
+                        <span class="status-dot"></span>
+
+                        <span
+                            data-fa="آماده برای همکاری"
+                            data-en="Available for work"
+                        >
+                            Available for work
+                        </span>
+                    </div>
+
+
+                    <p
+                        class="hero-eyebrow"
+                        data-fa="سلام، من"
+                        data-en="Hello, I'm"
+                    >
+                        Hello, I'm
+                    </p>
+
+
+                    <h1 class="hero-title">
+
+                        <span class="hero-name">
+                            Kiyan Rahmati
+                        </span>
+
+                        <span class="hero-role">
+                            <span
+                                data-fa="توسعه‌دهنده وب"
+                                data-en="Web Developer"
+                            >
+                                Web Developer
+                            </span>
+                        </span>
+
+                    </h1>
+
+
+                    <p
+                        class="hero-subtitle"
+                        data-fa="توسعه‌دهنده فرانت‌اند و بک‌اند"
+                        data-en="Frontend & Backend Developer"
+                    >
+                        Frontend & Backend Developer
+                    </p>
+
+
+                    <p
+                        class="hero-description"
+                        data-fa="من وب‌سایت‌ها و اپلیکیشن‌های وب مدرن، ریسپانسیو و کاربرپسند می‌سازم و روی کدنویسی تمیز، راهکارهای کاربردی و یادگیری مداوم تمرکز دارم."
+                        data-en="I build modern, responsive and user-friendly web applications with a focus on clean code, practical solutions and continuous learning."
+                    >
+                        I build modern, responsive and user-friendly
+                        web applications with a focus on clean code,
+                        practical solutions and continuous learning.
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <a
+                            href="pages/projects/"
+                            class="btn btn-primary"
+                        >
+                            <span
+                                data-fa="مشاهده پروژه‌ها"
+                                data-en="View Projects"
+                            >
+                                View Projects
+                            </span>
+
+                            <span class="btn-arrow">→</span>
+                        </a>
+
+
+                        <a
+                            href="pages/contact/"
+                            class="btn btn-secondary"
+                        >
+                            <span
+                                data-fa="همکاری با من"
+                                data-en="Work With Me"
+                            >
+                                Work With Me
+                            </span>
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-socials">
+
+                        <a
+                            href="https://github.com/kiyan-rahmati"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social-link"
+                            aria-label="GitHub"
+                        >
+                            GitHub
+                        </a>
+
+                        <span>·</span>
+
+                        <span
+                            data-fa="شروع فعالیت از ۲۰۲۲"
+                            data-en="Working since 2022"
+                        >
+                            Working since 2022
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Profile -->
+
+                <div class="hero-visual animate-scale-in">
+
+                    <div class="profile-card">
+
+                        <div class="profile-glow"></div>
+
+                        <div class="profile-image-wrapper">
+
+                            <img
+                                src="assets/images/profile/profile.jpg"
+                                alt="Kiyan Rahmati"
+                                class="profile-image"
+                                loading="eager"
+                            >
+
+                        </div>
+
+
+                        <div class="profile-card-info">
+
+                            <strong>
+                                Kiyan Rahmati
+                            </strong>
+
+                            <span
+                                data-fa="توسعه‌دهنده وب"
+                                data-en="Web Developer"
+                            >
+                                Web Developer
+                            </span>
+
+                        </div>
+
+
+                        <div class="profile-code">
+
+                            <span>&lt;</span>
+
+                            <span class="code-purple">
+                                web
+                            </span>
+
+                            <span>&gt;</span>
+
+                            <span class="code-cursor">_</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             STATS
+        ========================== -->
+
+        <section class="stats-section">
+
+            <div class="container">
+
+                <div class="stats-grid">
+
+                    <div class="stat-item">
+
+                        <strong>2022</strong>
+
+                        <span
+                            data-fa="شروع مسیر توسعه وب"
+                            data-en="Started web development"
+                        >
+                            Started web development
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-item">
+
+                        <strong id="repoCount">0+</strong>
+
+                        <span
+                            data-fa="پروژه عمومی در GitHub"
+                            data-en="Public GitHub projects"
+                        >
+                            Public GitHub projects
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-item">
+
+                        <strong>12+</strong>
+
+                        <span
+                            data-fa="تکنولوژی و ابزار"
+                            data-en="Technologies & tools"
+                        >
+                            Technologies & tools
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-item">
+
+                        <strong>∞</strong>
+
+                        <span
+                            data-fa="یادگیری و پیشرفت"
+                            data-en="Learning & improving"
+                        >
+                            Learning & improving
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section class="section about-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span
+                        class="section-label"
+                        data-fa="درباره من"
+                        data-en="About Me"
+                    >
+                        About Me
+                    </span>
+
+                    <h2
+                        data-fa="ساخت وب، یادگیری و پیشرفت"
+                        data-en="Building for the Web"
+                    >
+                        Building for the Web
+                    </h2>
+
+                    <p
+                        data-fa="تمرکز اصلی من توسعه وب است؛ از رابط کاربری و تجربه کاربر تا منطق بک‌اند و دیتابیس."
+                        data-en="My main focus is web development — from user interfaces and experience to backend logic and databases."
+                    >
+                        My main focus is web development — from user
+                        interfaces and experience to backend logic
+                        and databases.
+                    </p>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <article class="info-card hover-lift">
+
+                        <div class="info-card-icon">
+                            01
+                        </div>
+
+                        <h3
+                            data-fa="فرانت‌اند"
+                            data-en="Frontend"
+                        >
+                            Frontend
+                        </h3>
+
+                        <p
+                            data-fa="ساخت رابط‌های کاربری مدرن، ریسپانسیو و کاربردی با تکنولوژی‌های وب."
+                            data-en="Building modern, responsive and practical user interfaces with modern web technologies."
+                        >
+                            Building modern, responsive and practical
+                            user interfaces with modern web technologies.
+                        </p>
+
+                    </article>
+
+
+                    <article class="info-card hover-lift">
+
+                        <div class="info-card-icon">
+                            02
+                        </div>
+
+                        <h3
+                            data-fa="بک‌اند"
+                            data-en="Backend"
+                        >
+                            Backend
+                        </h3>
+
+                        <p
+                            data-fa="توسعه منطق سمت سرور و ساخت بخش‌های کاربردی وب با PHP و Laravel."
+                            data-en="Developing server-side logic and practical web applications with PHP and Laravel."
+                        >
+                            Developing server-side logic and practical
+                            web applications with PHP and Laravel.
+                        </p>
+
+                    </article>
+
+
+                    <article class="info-card hover-lift">
+
+                        <div class="info-card-icon">
+                            03
+                        </div>
+
+                        <h3
+                            data-fa="دیتابیس"
+                            data-en="Database"
+                        >
+                            Database
+                        </h3>
+
+                        <p
+                            data-fa="یادگیری و استفاده از SQL و MySQL برای مدیریت و ذخیره‌سازی داده‌ها."
+                            data-en="Learning and using SQL and MySQL for managing and storing application data."
+                        >
+                            Learning and using SQL and MySQL for
+                            managing and storing application data.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <div class="section-link">
+
+                    <a
+                        href="pages/about/"
+                        class="text-link"
+                    >
+                        <span
+                            data-fa="بیشتر درباره من"
+                            data-en="More About Me"
+                        >
+                            More About Me
+                        </span>
+
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
+        <section class="section skills-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span
+                        class="section-label"
+                        data-fa="مهارت‌ها"
+                        data-en="Skills"
+                    >
+                        Skills
+                    </span>
+
+                    <h2
+                        data-fa="تکنولوژی‌هایی که با آن‌ها کار می‌کنم"
+                        data-en="Technologies I Work With"
+                    >
+                        Technologies I Work With
+                    </h2>
+
+                    <p
+                        data-fa="مهارت‌ها و تکنولوژی‌هایی که در مسیر توسعه وب یاد گرفته‌ام و در حال تقویت آن‌ها هستم."
+                        data-en="Technologies and skills I have learned and continue to improve throughout my web development journey."
+                    >
+                        Technologies and skills I have learned and
+                        continue to improve throughout my web development journey.
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="skillsGrid"
+                    class="skills-grid"
+                >
+                    <!-- Skills are loaded with JavaScript -->
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             FEATURED PROJECTS
+        ========================== -->
+
+        <section class="section projects-section">
+
+            <div class="container">
+
+                <div class="section-heading section-heading-row">
+
+                    <div>
+
+                        <span
+                            class="section-label"
+                            data-fa="پروژه‌ها"
+                            data-en="Projects"
+                        >
+                            Projects
+                        </span>
+
+                        <h2
+                            data-fa="چند نمونه از کارهای من"
+                            data-en="Featured Projects"
+                        >
+                            Featured Projects
+                        </h2>
+
+                        <p
+                            data-fa="پروژه‌ها به صورت مستقیم از GitHub دریافت می‌شوند."
+                            data-en="Projects are loaded directly from GitHub."
+                        >
+                            Projects are loaded directly from GitHub.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="pages/projects/"
+                        class="text-link desktop-link"
+                    >
+                        <span
+                            data-fa="همه پروژه‌ها"
+                            data-en="All Projects"
+                        >
+                            All Projects
+                        </span>
+
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+
+                <div
+                    id="featuredProjects"
+                    class="project-grid"
+                >
+                    <!-- GitHub projects are loaded here -->
+                </div>
+
+
+                <div class="mobile-section-link">
+
+                    <a
+                        href="pages/projects/"
+                        class="btn btn-secondary"
+                    >
+                        <span
+                            data-fa="مشاهده همه پروژه‌ها"
+                            data-en="View All Projects"
+                        >
+                            View All Projects
+                        </span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ARTICLES
+        ========================== -->
+
+        <section class="section articles-section">
+
+            <div class="container">
+
+                <div class="section-heading section-heading-row">
+
+                    <div>
+
+                        <span
+                            class="section-label"
+                            data-fa="مقالات و یادداشت‌ها"
+                            data-en="Articles & Notes"
+                        >
+                            Articles & Notes
+                        </span>
+
+                        <h2
+                            data-fa="چیزهایی که یاد می‌گیرم"
+                            data-en="What I'm Learning"
+                        >
+                            What I'm Learning
+                        </h2>
+
+                        <p
+                            data-fa="یادداشت‌هایی درباره مسیر یادگیری و تجربه‌های توسعه وب."
+                            data-en="Notes about my learning journey and experiences in web development."
+                        >
+                            Notes about my learning journey and
+                            experiences in web development.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="pages/articles/"
+                        class="text-link desktop-link"
+                    >
+                        <span
+                            data-fa="همه مقالات"
+                            data-en="All Articles"
+                        >
+                            All Articles
+                        </span>
+
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+
+                <div
+                    id="articlePreview"
+                    class="article-grid"
+                >
+                    <!-- Articles are loaded with JavaScript -->
+                </div>
+
+
+                <div class="mobile-section-link">
+
+                    <a
+                        href="pages/articles/"
+                        class="btn btn-secondary"
+                    >
+                        <span
+                            data-fa="مشاهده همه مقالات"
+                            data-en="View All Articles"
+                        >
+                            View All Articles
+                        </span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             TESTIMONIALS
+        ========================== -->
+
+        <section class="section testimonials-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span
+                        class="section-label"
+                        data-fa="بازخورد"
+                        data-en="Testimonials"
+                    >
+                        Testimonials
+                    </span>
+
+                    <h2
+                        data-fa="نظر همکاران و مشتریان"
+                        data-en="What People Say"
+                    >
+                        What People Say
+                    </h2>
+
+                    <p
+                        data-fa="این بخش فعلاً نمونه است و بعداً با بازخوردهای واقعی تکمیل می‌شود."
+                        data-en="This section currently contains placeholders and will be replaced with real feedback."
+                    >
+                        This section currently contains placeholders
+                        and will be replaced with real feedback.
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="testimonialsGrid"
+                    class="testimonials-grid"
+                >
+                    <!-- Testimonials are loaded with JavaScript -->
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CTA
+        ========================== -->
+
+        <section class="section cta-section">
+
+            <div class="container">
+
+                <div class="cta-card">
+
+                    <div class="cta-content">
+
+                        <span
+                            class="section-label"
+                            data-fa="بیایید همکاری کنیم"
+                            data-en="Let's Work Together"
+                        >
+                            Let's Work Together
+                        </span>
+
+
+                        <h2
+                            data-fa="ایده‌ای برای یک پروژه وب دارید؟"
+                            data-en="Have a web project in mind?"
+                        >
+                            Have a web project in mind?
+                        </h2>
+
+
+                        <p
+                            data-fa="اگر برای ساخت یا توسعه یک پروژه وب به کمک نیاز دارید، خوشحال می‌شوم درباره ایده‌تان صحبت کنیم."
+                            data-en="If you need help building or improving a web project, I'd be happy to hear about your idea."
+                        >
+                            If you need help building or improving a
+                            web project, I'd be happy to hear about your idea.
+                        </p>
+
+
+                        <a
+                            href="pages/contact/"
+                            class="btn btn-primary"
+                        >
+                            <span
+                                data-fa="شروع گفتگو"
+                                data-en="Start a Conversation"
+                            >
+                                Start a Conversation
+                            </span>
+
+                            <span class="btn-arrow">→</span>
+                        </a>
+
+                    </div>
+
+
+                    <div class="cta-decoration" aria-hidden="true">
+
+                        <span>{</span>
+
+                        <span>&lt;/&gt;</span>
+
+                        <span>}</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+            <div class="footer-brand">
+
+                <a
+                    href="./"
+                    class="logo"
+                >
+                    <span>kiyan</span>.dev
+                </a>
+
+                <p
+                    data-fa="توسعه‌دهنده وب | فرانت‌اند و بک‌اند"
+                    data-en="Web Developer | Frontend & Backend"
+                >
+                    Web Developer | Frontend & Backend
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a
+                    href="https://github.com/kiyan-rahmati"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <a href="pages/about/">
+                    <span
+                        data-fa="درباره"
+                        data-en="About"
+                    >
+                        About
+                    </span>
+                </a>
+
+                <a href="pages/contact/">
+                    <span
+                        data-fa="تماس"
+                        data-en="Contact"
+                    >
+                        Contact
+                    </span>
+                </a>
+
+            </div>
+
+
+            <div class="footer-copy">
+
+                © 2026 Kiyan Rahmati
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================
+         SEARCH OVERLAY
+    ========================== -->
+
+    <div
+        class="search-overlay"
+        id="searchOverlay"
+        aria-hidden="true"
+    >
+
+        <div class="search-box">
+
+            <div class="search-header">
+
+                <h2
+                    data-fa="جستجو"
+                    data-en="Search"
+                >
+                    Search
+                </h2>
+
+                <button
+                    type="button"
+                    class="search-close"
+                    data-search-close
+                    aria-label="Close search"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="search-input-wrapper">
+
+                <span>⌕</span>
+
+                <input
+                    type="search"
+                    id="globalSearchInput"
+                    autocomplete="off"
+                    data-placeholder-fa="جستجو در سایت..."
+                    data-placeholder-en="Search the website..."
+                    placeholder="Search the website..."
+                    aria-label="Search"
+                >
+
+                <kbd>ESC</kbd>
+
+            </div>
+
+
+            <div
+                id="searchResults"
+                class="search-results"
+            >
+                <!-- Search results -->
+            </div>
+
+
+            <div class="search-hint">
+
+                <span>Ctrl</span>
+                <span>+</span>
+                <span>K</span>
+
+                <span
+                    data-fa="برای جستجوی سریع"
+                    data-en="to search quickly"
+                >
+                    to search quickly
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="js/theme.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/github.js"></script>
+    <script src="js/pages.js"></script>
+    <script src="js/app.js"></script>
+    <script src="components/loader/loader.js"></script>
+
+</body>
+
+</html>

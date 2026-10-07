@@ -1,0 +1,197 @@
+:root {
+    /* ================================
+       Brand Colors
+    ================================= */
+
+    --bg: #07111f;
+    --surface: #0d1a2d;
+    --surface-2: #142640;
+
+    --border: #1d2c43;
+
+    --purple: #8b5cf6;
+    --purple-light: #a78bfa;
+    --purple-dark: #6d28d9;
+
+    --success: #4ade80;
+    --danger: #ef4444;
+    --warning: #facc15;
+
+    /* ================================
+       Text Colors
+    ================================= */
+
+    --text: #f8fafc;
+    --text-secondary: #d5dbea;
+    --text-muted: #94a3b8;
+
+    /* ================================
+       Typography
+    ================================= */
+
+    --font-family:
+        "Inter",
+        "Vazirmatn",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    --font-mono:
+        "JetBrains Mono",
+        "Fira Code",
+        Consolas,
+        monospace;
+
+    /* ================================
+       Font Sizes
+    ================================= */
+
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-md: 16px;
+    --text-lg: 18px;
+    --text-xl: 22px;
+    --text-2xl: 28px;
+    --text-3xl: 36px;
+    --text-4xl: 48px;
+
+    /* ================================
+       Font Weights
+    ================================= */
+
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+    --weight-extrabold: 800;
+
+    /* ================================
+       Spacing
+    ================================= */
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+    --space-16: 64px;
+    --space-20: 80px;
+
+    /* ================================
+       Border Radius
+    ================================= */
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --radius-xl: 24px;
+    --radius-full: 999px;
+
+    /* ================================
+       Shadows
+    ================================= */
+
+    --shadow-sm:
+        0 4px 12px rgba(0, 0, 0, 0.12);
+
+    --shadow-md:
+        0 12px 30px rgba(0, 0, 0, 0.18);
+
+    --shadow-lg:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+
+    --shadow-purple:
+        0 12px 35px rgba(139, 92, 246, 0.18);
+
+    /* ================================
+       Layout
+    ================================= */
+
+    --container-width: 1180px;
+
+    --navbar-height: 76px;
+
+    /* ================================
+       Transitions
+    ================================= */
+
+    --transition-fast: 0.2s ease;
+    --transition: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+
+/* ====================================
+   Light Theme
+==================================== */
+
+body.light {
+    --bg: #f5f7fb;
+
+    --surface: #ffffff;
+    --surface-2: #eef1f7;
+
+    --border: #dce2ed;
+
+    --text: #111827;
+    --text-secondary: #374151;
+    --text-muted: #64748b;
+
+    --purple: #7c3aed;
+    --purple-light: #8b5cf6;
+    --purple-dark: #6d28d9;
+
+    --success: #16a34a;
+    --danger: #dc2626;
+    --warning: #ca8a04;
+
+    --shadow-sm:
+        0 4px 12px rgba(15, 23, 42, 0.06);
+
+    --shadow-md:
+        0 12px 30px rgba(15, 23, 42, 0.08);
+
+    --shadow-lg:
+        0 20px 50px rgba(15, 23, 42, 0.12);
+
+    --shadow-purple:
+        0 12px 35px rgba(124, 58, 237, 0.12);
+}
+
+
+/* ====================================
+   Selection
+==================================== */
+
+::selection {
+    background: var(--purple);
+    color: #ffffff;
+}
+
+
+/* ====================================
+   Scrollbar
+==================================== */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--purple);
+}

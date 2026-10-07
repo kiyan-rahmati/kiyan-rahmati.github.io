@@ -1,0 +1,386 @@
+/* ====================================
+   PORTFOLIO LOADER
+   Kiyan Rahmati
+==================================== */
+
+#portfolioLoader {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+
+    display: grid;
+    place-items: center;
+
+    background: #07111f;
+
+    opacity: 1;
+    visibility: visible;
+
+    transition:
+        opacity 0.7s ease,
+        visibility 0.7s ease;
+}
+
+
+/* --------------------------------
+   Hidden State
+-------------------------------- */
+
+#portfolioLoader.loader-hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+/* --------------------------------
+   Inner
+-------------------------------- */
+
+.loader-inner {
+    width: min(90%, 360px);
+
+    text-align: center;
+
+    animation: loaderFadeUp 0.8s ease both;
+}
+
+
+/* --------------------------------
+   Coffee Cup
+-------------------------------- */
+
+.coffee-cup {
+    position: relative;
+
+    width: 110px;
+    height: 105px;
+
+    margin: 0 auto;
+}
+
+
+/* --------------------------------
+   Cup
+-------------------------------- */
+
+.cup {
+    position: absolute;
+
+    left: 50%;
+    bottom: 5px;
+
+    width: 82px;
+    height: 62px;
+
+    transform: translateX(-50%);
+
+    border: 3px solid #f8fafc;
+
+    border-radius:
+        7px
+        7px
+        20px
+        20px;
+
+    animation:
+        cupFloat 2s ease-in-out infinite;
+}
+
+
+/* Cup Handle */
+
+.cup::after {
+    content: "";
+
+    position: absolute;
+
+    top: 11px;
+    right: -25px;
+
+    width: 22px;
+    height: 25px;
+
+    border: 3px solid #f8fafc;
+
+    border-left: 0;
+
+    border-radius:
+        0
+        14px
+        14px
+        0;
+}
+
+
+/* --------------------------------
+   Coffee
+-------------------------------- */
+
+.coffee {
+    position: absolute;
+
+    top: 8px;
+    left: 8px;
+    right: 8px;
+
+    height: 13px;
+
+    border-radius: 50%;
+
+    background: #8b5cf6;
+
+    box-shadow:
+        0 0 20px rgba(
+            139,
+            92,
+            246,
+            0.25
+        );
+}
+
+
+/* --------------------------------
+   Steam
+-------------------------------- */
+
+.steam {
+    position: absolute;
+
+    bottom: 66px;
+
+    width: 5px;
+    height: 30px;
+
+    border-left: 2px solid #a78bfa;
+
+    border-radius: 50%;
+
+    opacity: 0;
+
+    animation:
+        steamMove 1.7s ease-in-out infinite;
+}
+
+
+.steam-1 {
+    left: 28px;
+
+    animation-delay: 0s;
+}
+
+
+.steam-2 {
+    left: 50px;
+
+    animation-delay: 0.35s;
+}
+
+
+.steam-3 {
+    left: 72px;
+
+    animation-delay: 0.7s;
+}
+
+
+/* --------------------------------
+   Brand
+-------------------------------- */
+
+.loader-brand {
+    margin-top: 20px;
+
+    color: #f8fafc;
+
+    font-family:
+        "Inter",
+        "Vazirmatn",
+        system-ui,
+        sans-serif;
+
+    font-size: 22px;
+    font-weight: 800;
+
+    letter-spacing: -0.5px;
+}
+
+
+.loader-brand span {
+    color: #a78bfa;
+}
+
+
+/* --------------------------------
+   Message
+-------------------------------- */
+
+.loader-message {
+    margin-top: 9px;
+
+    color: #94a3b8;
+
+    font-family:
+        "Inter",
+        "Vazirmatn",
+        system-ui,
+        sans-serif;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    min-height: 20px;
+}
+
+
+/* --------------------------------
+   Progress
+-------------------------------- */
+
+.loader-progress {
+    width: 150px;
+    height: 3px;
+
+    margin: 18px auto 0;
+
+    overflow: hidden;
+
+    background: #1d2c43;
+
+    border-radius: 999px;
+}
+
+
+.loader-progress span {
+    display: block;
+
+    width: 45%;
+    height: 100%;
+
+    background: #8b5cf6;
+
+    border-radius: inherit;
+
+    animation:
+        loaderProgress 1.4s ease-in-out infinite;
+}
+
+
+/* --------------------------------
+   Animations
+-------------------------------- */
+
+@keyframes cupFloat {
+
+    0%,
+    100% {
+        transform:
+            translateX(-50%)
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateX(-50%)
+            translateY(-5px);
+    }
+}
+
+
+@keyframes steamMove {
+
+    0% {
+        transform:
+            translateY(6px)
+            scaleY(0.8);
+
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0.8;
+    }
+
+    50% {
+        transform:
+            translateY(-5px)
+            scaleY(1);
+
+        opacity: 1;
+    }
+
+    100% {
+        transform:
+            translateY(-16px)
+            scaleY(0.7);
+
+        opacity: 0;
+    }
+}
+
+
+@keyframes loaderProgress {
+
+    0% {
+        transform: translateX(-130%);
+    }
+
+    50% {
+        transform: translateX(120%);
+    }
+
+    100% {
+        transform: translateX(250%);
+    }
+}
+
+
+@keyframes loaderFadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* --------------------------------
+   Mobile
+-------------------------------- */
+
+@media (max-width: 600px) {
+
+    .coffee-cup {
+        transform: scale(0.92);
+    }
+
+    .loader-brand {
+        font-size: 20px;
+    }
+
+    .loader-message {
+        font-size: 12px;
+    }
+
+}
+
+
+/* --------------------------------
+   Reduced Motion
+-------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .cup,
+    .steam,
+    .loader-progress span,
+    .loader-inner {
+        animation: none;
+    }
+
+}

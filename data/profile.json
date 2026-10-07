@@ -1,0 +1,61 @@
+{
+  "name": "Kiyan Rahmati",
+  "username": "kiyan-rahmati",
+
+  "title": {
+    "en": "Web Developer",
+    "fa": "توسعه‌دهنده وب"
+  },
+
+  "subtitle": {
+    "en": "Frontend & Backend Developer",
+    "fa": "توسعه‌دهنده فرانت‌اند و بک‌اند"
+  },
+
+  "description": {
+    "en": "I build modern, responsive and user-friendly web applications with a focus on clean code, practical solutions and continuous learning.",
+    "fa": "من روی ساخت وب‌سایت‌ها و اپلیکیشن‌های وب مدرن، ریسپانسیو و کاربرپسند تمرکز دارم و به کدنویسی تمیز، راهکارهای کاربردی و یادگیری مداوم اهمیت می‌دهم."
+  },
+
+  "location": {
+    "en": "Iran",
+    "fa": "ایران"
+  },
+
+  "education": {
+    "en": "Computer Engineering Student",
+    "fa": "دانشجوی مهندسی کامپیوتر"
+  },
+
+  "startedWorking": 2022,
+
+  "specialization": [
+    "Frontend Development",
+    "Backend Development"
+  ],
+
+  "skills": [
+    "HTML5",
+    "CSS3",
+    "JavaScript (ES6+)",
+    "Bootstrap",
+    "Vue.js",
+    "React",
+    "PHP",
+    "Laravel",
+    "AJAX",
+    "SQL",
+    "MySQL",
+    "Python"
+  ],
+
+  "social": {
+    "github": "https://github.com/kiyan-rahmati",
+    "githubPages": "https://kiyan-rahmati.github.io"
+  },
+
+  "availability": {
+    "en": "Available for freelance projects and web development opportunities.",
+    "fa": "برای پروژه‌های فریلنسری و فرصت‌های همکاری در زمینه توسعه وب آماده همکاری هستم."
+  }
+}
